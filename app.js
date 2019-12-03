@@ -247,7 +247,7 @@ execQuery(queryInsertUserCollaborator({
   console.log(err);
 });
 */
-
+/*
 //CADASTRA PROJETO
 execQuery(queryInsertProject({
   nome_completo: "Taquari",
@@ -261,7 +261,7 @@ execQuery(queryInsertProject({
 }).catch(err => {
   console.log(err);
 });
-
+*/
 //CADASTRA PROJETO
 /*
 execQuery(queryInsertProjectAgriculture({
@@ -346,4 +346,44 @@ execQuery(querySearchProjectAndOwner).then(data => {
   console.log(err);
 });*/
 
-module.exports = execQuery
+module.exports = {
+  execQuery,
+  queryInsertUser,
+  queryInsertUserDataBanking,
+  queryInsertUserInvestor,
+  queryInsertUserEntrepreneur,
+  queryInsertUserCollaborator,
+  queryInsertProject,
+  queryInsertProjectAgriculture,
+  queryInsertProjectArtes,
+  queryInsertProjectEstudo,
+  queryInsertProjectComercio,
+  queryDeleteUser,
+  querySearchUser,
+  querySearchProjectAndOwner,
+  querySearchProjectAndOwnerForName,
+  querySearchProjectForNameTheProject,
+  queryDeleteProjectForName,
+  queryCollaborate,
+  queryInvestiment
+}
+/*
+module.exports = queryInsertUser
+module.exports = queryInsertUserDataBanking
+module.exports = queryInsertUserInvestor
+module.exports = queryInsertUserEntrepreneur
+module.exports = queryInsertUserCollaborator
+module.exports = queryInsertProject
+module.exports = queryInsertProjectAgriculture
+module.exports = queryInsertProjectArtes
+module.exports = queryInsertProjectEstudo
+module.exports = queryInsertProjectComercio
+module.exports = queryDeleteUser
+module.exports = querySearchUser
+module.exports = querySearchProjectAndOwner
+module.exports = querySearchProjectAndOwnerForName
+module.exports = querySearchProjectForNameTheProject
+module.exports = queryDeleteProjectForName
+module.exports = queryCollaborate
+module.exports = queryInvestiment
+*/

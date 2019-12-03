@@ -31,7 +31,7 @@ const Post = require('./app.js')
 
   app.post('/add', function(req, res){
 
-    Post.execQuery(queryInsertUser({
+    Post.queryInsertUser({
       id_usuario: req.body.id_usuario,
       CPF: req.body.CPF,
       nome_completo: req.body.nome_completo,
@@ -40,7 +40,7 @@ const Post = require('./app.js')
       telefone: req.body.telefone,
       linkedin: req.body.linkedin,
       site: req.body.site
-    })).then((data) => {
+    }).then((data) => {
       res.send("Post criado com sucesso")
     }).catch(function(erro){
         res.send("Post deu erro" + erro)
